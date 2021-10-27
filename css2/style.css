@@ -76,7 +76,6 @@ div#content-wrapper #content-wrapper-section {
   height: calc(100vh - 60px);
   position: relative;
   top: 60px;
-  display: none;
 }
 
 div#content-wrapper #content-wrapper-section #dots-grid {
