@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:wght@800&family=Spartan&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Color Theme Swatches in Hex */
+@font-face {
+  font-family: lemon-milk;
+  src: url("../font/LEMONMILK-Bold.otf");
+}
+
+@font-face {
+  font-family: nasalization;
+  src: url("../font/nasalization-rg.otf");
+}
+
+@font-face {
+  font-family: pacifico;
+  src: url("../font/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: pirulen;
+  src: url("../font/pirulen rg.ttf");
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #110066;
+  width: 100vw;
+  height: 200vh;
+  background-color: #110066;
+}
+
+nav {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 10vh;
+  margin: auto;
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+nav h1.logo {
+  color: #ffffff;
+  font-family: pirulen;
+  font-size: 1.75rem;
+  margin-left: 1rem;
+}
+
+nav ul.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 1rem;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+nav ul.nav-links li {
+  color: #ffffff;
+  padding: 1rem;
+  font-family: nasalization;
+  text-transform: uppercase;
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+
+nav ul.nav-links li:before {
+  position: absolute;
+  bottom: 0.7rem;
+  content: "";
+  width: 0;
+  height: 0.11rem;
+  background-color: #ffffff;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transition-property: width, opacity;
+  transition-property: width, opacity;
+}
+
+nav ul.nav-links li:hover:before {
+  width: 100%;
+  opacity: 1;
+}
+
+nav.scrolled {
+  background-color: #90cbfb;
+}
+
+section.intro-content {
+  width: 100%;
+  height: 90vh;
+  z-index: 1;
+  margin-top: 10vh;
+}
+
+section.intro-content svg#Group_4 {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: -80% 250px;
+          transform-origin: -80% 250px;
+}
+
+section.intro-content h1 {
+  font-family: pirulen;
+  color: #ffffff;
+  font-size: 3rem;
+  margin: 2.25em 0 0 1.5em;
+}
+
+section.intro-content h3 {
+  font-family: "Spartan", sans-serif;
+  color: #ffffff;
+  font-size: 2.0em;
+  margin: 0.15em 0 0.25em 2.25em;
+}
+
+section.intro-content section {
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+  left: 70px;
+  display: inline-block;
+  width: 40%;
+}
+
+section.intro-content section h3.vct {
+  font-family: lemon-milk;
+  margin: 0;
+  padding: 0.75em;
+  letter-spacing: 5px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+section.intro-content h1#year {
+  position: absolute;
+  top: 7.5%;
+  left: 35%;
+  font-size: 15em;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: 'Rampart One', cursive;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+section.intro-content svg#path_17 {
+  position: absolute;
+  top: 50px;
+  right: 450px;
+}
+
+section.intro-content svg#path_18 {
+  position: absolute;
+  top: -50px;
+  right: -300px;
+}
+
+section.intro-content svg#hatched_3 {
+  display: inline-block;
+  position: absolute;
+  top: 225px;
+  right: 50%;
+}
+/*# sourceMappingURL=style.css.map */
