@@ -75,6 +75,8 @@ div#content-wrapper {
     //   margin-top: 60px;
     position: relative;
     top: 60px;
+    min-width: 1366px;
+    max-width: 1920px;
     // display: none;//temporarily removed to work on html and css layout
     // transition: all 4s ease-in-out;
     #dots-grid {
@@ -83,5 +85,9 @@ div#content-wrapper {
       top: 3px;
       padding:1em;
     }
+    // img {
+    //   width: 100%;
+    //   height: auto;
+    // }
   }
 }
