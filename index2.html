@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css2/style.css" />
-  </head>
 
-  <body>
-    <div id="content-wrapper">
-      <nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css2/style.css" />
+  <style>
+    #demo2 {
+      width: 100%;
+      height: 500px;
+      background-color: red;
+    }
+
+    button {
+      padding: 1em 2.5em;
+      margin: 2em 1em;
+      border-radius: 0.5em;
+    }
+
+    p {
+      /* padding: 1em 2.5em; */
+      margin: 1em;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content-wrapper">
+    <!-- <nav>
         <ul>
           <li id="home"><a href="#">Home</a></li>
           <li id="courses"><a href="#">Courses</a></li>
@@ -27,14 +47,49 @@
         <img id="image-2021" src="SVG/2021.svg" alt="" />
         <img src="SVG/hatched-2.svg" alt="" />
         <img src="SVG/Subtraction 1.svg" alt="" />
-      </section>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-      window.jQuery ||
-        document.write('<script src="js2/jquery-3.6.0.min.js"><\/script>');
-    </script>
-    <!-- temporarily removed app.js to work on html and css layout -->
-    <script src="js2/app.js"></script>
-  </body>
+      </section> -->
+
+
+    <section id="demo2">
+      <button id="show">Show</button>
+      <button id="hide">Hide</button>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, doloremque harum at vel quia repudiandae
+        ducimus dolores ea consequuntur atque aspernatur, ex necessitatibus odit suscipit dicta quibusdam consectetur
+        dignissimos. Assumenda alias architecto suscipit, odio cum officiis rem aspernatur illo ullam velit ut porro,
+        necessitatibus maiores repudiandae saepe? Eaque, ipsa quae.
+      </p>
+    </section>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    window.jQuery ||
+      document.write('<script src="js2/jquery-3.6.0.min.js"><\/script>');
+  </script>
+  <!-- temporarily removed app.js to work on html and css layout -->
+  <script src="js2/app.js"></script>
+
+  <script>
+    // ()=> {} same as function(){}
+    $(document).ready(function () {
+      // jquery starts here
+      const hide = $('#hide');
+      const show = $('#show');
+      const para = $('p');
+
+      // console.log(hide);
+      $(hide).click(function () {
+        $(para).hide();
+      })
+
+      $(show).click(() => {
+        $(para).show();
+      })
+
+
+
+      /////////////////////////////document.ready ends here
+    });
+  </script>
+</body>
+
 </html>
