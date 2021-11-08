@@ -23,7 +23,8 @@
     p {
       /* padding: 1em 2.5em; */
       margin: 1em;
-      color: #fff;
+      color: #ffffff;
+      display: none;
     }
   </style>
 </head>
@@ -51,8 +52,9 @@
 
 
     <section id="demo2">
-      <button id="show">Show</button>
-      <button id="hide">Hide</button>
+      <!-- <button id="show">Show</button>
+      <button id="hide">Hide</button> -->
+      <button id="toGGle">Show/Hide</button>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, doloremque harum at vel quia repudiandae
         ducimus dolores ea consequuntur atque aspernatur, ex necessitatibus odit suscipit dicta quibusdam consectetur
         dignissimos. Assumenda alias architecto suscipit, odio cum officiis rem aspernatur illo ullam velit ut porro,
@@ -72,19 +74,22 @@
     // ()=> {} same as function(){}
     $(document).ready(function () {
       // jquery starts here
-      const hide = $('#hide');
-      const show = $('#show');
+      // const hide = $('#hide');
+      // const show = $('#show');
       const para = $('p');
-
+      const toGGle = $('#toGGle');
       // console.log(hide);
-      $(hide).click(function () {
-        $(para).hide();
-      })
+    //   $(hide).click(function () {
+    //     $(para).hide(10000);
+    //   })
 
-      $(show).click(() => {
-        $(para).show();
-      })
-
+    // $(show).click(() => {
+    //     $(para).show(100);
+    //   })
+      $(toGGle).click(function(){
+          // $(para).fadeTo('fast', 0.5); 
+          $(para).slideToggle('fast'); 
+      });
 
 
       /////////////////////////////document.ready ends here
