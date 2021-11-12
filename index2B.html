@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+    #demo3 {
+      width: 100%;
+      height: 100vh;
+      background-color: red;
+    }
+
+    button {
+      padding: 1em 2.5em;
+      margin: 1em 1em;
+      border-radius: 0.5em;
+      font-family: 'Montserrat Subrayada', sans-serif;
+      font-size: 1.25em;
+      color:#ffffff;
+      background-color: black;
+    }
+
+    p {
+      /* padding: 1em 2.5em; */
+      font-family: 'Montserrat', sans-serif;
+      position: absolute;
+      margin: 1em;
+      color: #ffffff;
+      display: none;
+      width: 50%;
+      font-size: 1.5em;
+    }
+
+    span {
+        font-size: 3em;
+        display: inline-block;
+        padding-bottom: 1em;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+    /* font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Subrayada', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+    </style>
+</head>
+<body>
+    <section id="demo3">
+        <nav>
+            <button id="button-1">Page One</button>
+            <button id="button-2">Page Two</button>
+            <button id="button-3">Page Three</button>
+        </nav>
+        <p id="para1">
+            <span>Page 1</span><br>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam hic aut beatae laboriosam, facere atque assumenda saepe consectetur perspiciatis harum eveniet ad optio dolorem aperiam voluptatem temporibus unde ratione distinctio minima eos est earum. Culpa, itaque necessitatibus. Placeat nulla dignissimos veritatis in perspiciatis adipisci illum vitae incidunt, doloribus mollitia maxime neque, non quos, ratione ea ex corrupti. Aliquid, eveniet ut mollitia sed tempora et ab reprehenderit iusto consequatur nisi perferendis fuga? Earum ullam reiciendis dolorem veritatis perferendis eum aperiam porro neque modi cumque id error laboriosam ipsam, ad corrupti distinctio iure provident doloribus vel enim repellat adipisci. Assumenda, esse doloribus.</p>
+        <p id="para2">
+            <span>Page 2</span><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam hic aut beatae laboriosam, facere atque assumenda saepe consectetur perspiciatis harum eveniet ad optio dolorem aperiam voluptatem temporibus unde ratione distinctio minima eos est earum. Culpa, itaque necessitatibus. Placeat nulla dignissimos veritatis in perspiciatis adipisci illum vitae incidunt, doloribus mollitia maxime neque, non quos, ratione ea ex corrupti. Aliquid, eveniet ut mollitia sed tempora et ab reprehenderit iusto consequatur nisi perferendis fuga? Earum ullam reiciendis dolorem veritatis perferendis eum aperiam porro neque modi cumque id error laboriosam ipsam, ad corrupti distinctio iure provident doloribus vel enim repellat adipisci. Assumenda, esse doloribus.</p>
+        <p id="para3">
+            <span>Page 3</span><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam hic aut beatae laboriosam, facere atque assumenda saepe consectetur perspiciatis harum eveniet ad optio dolorem aperiam voluptatem temporibus unde ratione distinctio minima eos est earum. Culpa, itaque necessitatibus. Placeat nulla dignissimos veritatis in perspiciatis adipisci illum vitae incidunt, doloribus mollitia maxime neque, non quos, ratione ea ex corrupti. Aliquid, eveniet ut mollitia sed tempora et ab reprehenderit iusto consequatur nisi perferendis fuga? Earum ullam reiciendis dolorem veritatis perferendis eum aperiam porro neque modi cumque id error laboriosam ipsam, ad corrupti distinctio iure provident doloribus vel enim repellat adipisci. Assumenda, esse doloribus.</p>
+
+    </section>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+/////////////////// jquery starts here
+            const btn1 = $('#button-1');
+            const btn2 = $('#button-2');
+            const btn3 = $('#button-3');
+
+            const para1 = $('#para1');
+            const para2 = $('#para2');
+            const para3 = $('#para3');
+
+            $(btn1).click(()=>{
+                // $(para2).animate({right: '2em'});
+                $(para2).hide();
+                // $(para3).animate({right: '2em'});
+                $(para3).hide();
+                $(para1).slideToggle('fast');
+                $(para1).animate({left: '2em'});
+            })
+            $(btn2).click(()=>{
+                // $(para1).animate({right: '2em'});
+                $(para1).hide();
+                // $(para3).animate({right: '2em'});
+                $(para3).hide();
+                $(para2).slideToggle('fast');
+                $(para2).animate({left: '2em'});
+            })
+            $(btn3).click(()=>{
+                // $(para1).animate({right: '2em'});
+                $(para1).hide();
+                // $(para2).animate({right: '2em'});
+                $(para2).hide();
+                $(para3).slideToggle('fast');
+                $(para3).animate({left: '2em'});
+               
+            })
+
+/////////////////////////////document.ready ends here
+        });
+    </script>
+</body>
+</html>

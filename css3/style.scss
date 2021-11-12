@@ -1,0 +1,343 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Color Theme Swatches in Hex */
+$LightBlue1-hex: #90cbfb;
+$LightBlue2-hex: #3a1adb;
+$LightBlue3-hex: #110066;
+$LightYellow1-hex: #ffd432;
+$LightGrey1-hex: #ffffff;
+$LightGrey2-hex: #919191;
+
+$gradientBackground: linear-gradient(
+  190deg,
+  $LightBlue2-hex 0%,
+  $LightBlue3-hex 100%
+);
+
+@font-face {
+  font-family: lemon-milk;
+  src: url("../font/LEMONMILK-Bold.otf");
+}
+
+@font-face {
+  font-family: nasalization;
+  src: url("../font/nasalization-rg.otf");
+}
+
+@font-face {
+  font-family: pacifico;
+  src: url("../font/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: pirulen;
+  src: url("../font/pirulen\ rg.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:wght@800&family=Spartan&display=swap");
+$Roboto: "Roboto", sans-serif;
+$Rubik: "Rubik", sans-serif;
+$Spartan: "Spartan", sans-serif;
+
+$Pirulen: pirulen;
+$LemonMilk: lemon-milk;
+$Nasa: nasalization;
+$Pacifico: pacifico;
+
+body {
+  font-family: $Roboto;
+  color: $LightBlue3-hex;
+  width: 100vw;
+  height: 200vh;
+  background-color: $LightBlue3-hex;
+}
+
+nav {
+  background-color: transparent;
+  background-color: $LightBlue3-hex;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  margin: auto;
+  width: 100%;
+  z-index: 2;
+  transition: all 250ms ease-in;
+
+  h1.logo {
+    color: $LightGrey1-hex;
+    font-family: $Pirulen;
+    font-size: 1.75rem;
+    margin-left: 1rem;
+  }
+
+  ul.nav-links {
+    display: flex;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+    li {
+      color: $LightGrey1-hex;
+      padding: 1rem;
+      font-family: $Nasa;
+      text-transform: uppercase;
+      position: relative;
+      top: 0;
+      left: 0;
+      transition: all 0.5s ease;
+      transition-property: color;
+    }
+
+    li:before {
+      position: absolute;
+      bottom: 0.7rem;
+      content: "";
+      width: 0;
+      height: 0.11rem;
+      background-color: $LightGrey1-hex;
+      //   background-color: $LightBlue1-hex;
+      opacity: 0;
+      transition: all 1s ease;
+      transition-property: width, opacity;
+    }
+
+    li:hover:before {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}
+
+nav.scrolled {
+  background-color: $LightBlue1-hex;
+}
+main {
+  //   max-width: 1920px;
+  margin: 0 auto;
+}
+div.intro-content {
+    visibility: hidden;
+  width: 100%;
+  height: 90vh;
+  z-index: 1;
+  margin-top: 10vh;
+  position: relative;
+  section.svg-assets {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+#Group_4 {
+  position: relative;
+  top: 17px;
+  left: -435.7817077636719px;
+  width: 552px;
+  height: 552px;
+}
+#webd {
+  position: relative;
+  top: 41px;
+  left: 149px;
+  width: 612px;
+  height: 122px;
+}
+#century {
+  position: relative;
+  top: 148px;
+  left: 149px;
+  width: 455px;
+  height: 74px;
+}
+#vct {
+  position: relative;
+  top: 228px;
+  left: 150px;
+  width: 712px;
+  height: 243px;
+}
+#rect47 {
+  position: absolute;
+  top: 213px;
+  left: 133px;
+  width: 745px;
+  height: 258px;
+  border: 1px solid var(--unnamed-color-ffffff);
+  background: transparent url("../SVG/Rectangle\ 47.svg") 0% 0% no-repeat
+    padding-box;
+  mix-blend-mode: color-dodge;
+  border: 1px solid #ffffff;
+  opacity: 0.39;
+}
+#_2021 {
+  position: relative;
+  top: -98px;
+  left: 530px;
+  width: 1140px;
+  height: 639px;
+}
+#_p17 {
+  position: relative;
+  top: -105.35598754882812px;
+  left: 984px;
+  width: 180px;
+  height: 190px;
+}
+#htd_3 {
+  position: relative;
+  top: 154px;
+  left: 984px;
+  width: 292px;
+  height: 447px;
+}
+#mskG1 {
+  position: relative;
+  top: 26px;
+  left: 1363px;
+  width: 360px;
+  height: 367px;
+}
+#l2 {
+  position: relative;
+  top: 130px;
+  left: 980px;
+}
+#el3 {
+  position: relative;
+  top: -487px;
+  left: 1468px;
+}
+#_p18 {
+  position: relative;
+  top: -50px;
+  left: 1660px;
+}
+#sharon-mccutcheon1 {
+  position: relative;
+  top: 213px;
+  left: 470px;
+  z-index: -1;
+  opacity: 0.5;
+  mix-blend-mode: luminosity;
+}
+#htd3 {
+  position: relative;
+  top: 744px;
+  left: -95px;
+  width: 311px;
+  height: 203px;
+  opacity: 0.34;
+}
+#subt1 {
+  position: relative;
+  top: 610px;
+  left: 55px;
+  width: 429px;
+  height: 430px;
+}
+#mskG_1 {
+  position: relative;
+  top: 540px;
+  left: 300px;
+  width: 267px;
+  height: 270px;
+}
+#_p20 {
+  position: relative;
+  top: 603px;
+  left: 595px;
+  width: 180px;
+  height: 190px;
+}
+#sharon-mccutcheon2 {
+  position: relative;
+  top: 556px;
+  left: 642px;
+  width: 180px;
+  height: 190px;
+  mix-blend-mode: luminosity;
+}
+#htd33 {
+  position: relative;
+  top: 845px;
+  left: 537px;
+  width: 447px;
+  height: 292px;
+}
+#sharon-mccutcheon3 {
+  position: relative;
+  top: 845px;
+  left: 833px;
+  width: 173px;
+  height: 235px;
+  mix-blend-mode: luminosity;
+  opacity: 1;
+}
+#subt2 {
+  position: relative;
+  top: 752px;
+  left: 926px;
+  width: 160px;
+  height: 160px;
+}
+#htd {
+  position: relative;
+  top: 713px;
+  left: 1170px;
+  width: 360px;
+  height: 367px;
+}
+#cir-G {
+  position: relative;
+  top: 556px;
+  left: 1370px;
+  width: 498px;
+  height: 474px;
+  z-index: -1;
+}
+#rect45 {
+  position: relative;
+  top: 424px;
+  left: 1363px;
+  width: 391px;
+  height: 656px;
+  z-index: 1;
+  background: #fff;
+}
+#_p19 {
+  position: relative;
+  top: 713px;
+  left: 1413px;
+  width: 348px;
+  height: 367px;
+  z-index: 2;
+}
+#mskG_1a {
+  position: relative;
+  top: 426px;
+  left: 1510px;
+  width: 244px;
+  height: 249px;
+  z-index: 2;
+}
+#rect44 {
+  position: relative;
+  top: 424px;
+  left: 1335px;
+  width: 334px;
+  height: 656px;
+}
+
+// switch navigation animation colors around
+
+// font-family: 'Alfa Slab One', cursive;
+// font-family: 'Rampart One', cursive;
