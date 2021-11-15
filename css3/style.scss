@@ -125,17 +125,19 @@ main {
   margin: 0 auto;
 }
 div.intro-content {
-    visibility: hidden;
+    // visibility: hidden;
   width: 100%;
   height: 90vh;
   z-index: 1;
-  margin-top: 10vh;
+//   margin-top: 10vh;
   position: relative;
   section.svg-assets {
     position: absolute;
     top: 0;
     left: 0;
+    // transition: transform 1s linear;
   }
+
 }
 #Group_4 {
   position: relative;
@@ -143,6 +145,10 @@ div.intro-content {
   left: -435.7817077636719px;
   width: 552px;
   height: 552px;
+//   transition: all 1s linear;
+}
+#Group_4:hover {
+    // transform: scale(105%);
 }
 #webd {
   position: relative;
@@ -337,7 +343,19 @@ div.intro-content {
   height: 656px;
 }
 
+.svg-assets{
+    transition: transform 1s linear;
+    display: inline-block;
+    cursor: pointer;
+}
+.svg-assets:hover {
+  transform: scale(105%); 
+}
+
 // switch navigation animation colors around
 
 // font-family: 'Alfa Slab One', cursive;
 // font-family: 'Rampart One', cursive;
+
+
+

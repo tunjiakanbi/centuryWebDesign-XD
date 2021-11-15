@@ -103,11 +103,9 @@ main {
 }
 
 div.intro-content {
-  visibility: hidden;
   width: 100%;
   height: 90vh;
   z-index: 1;
-  margin-top: 10vh;
   position: relative;
 }
 
@@ -340,5 +338,15 @@ div.intro-content section.svg-assets {
   left: 1335px;
   width: 334px;
   height: 656px;
+}
+
+.svg-assets {
+  transition: transform 1s linear;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.svg-assets:hover {
+  transform: scale(105%);
 }
 /*# sourceMappingURL=style.css.map */
