@@ -2,7 +2,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 16px;
 }
 
@@ -39,13 +40,20 @@ nav {
   background-color: transparent;
   position: fixed;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 10vh;
   margin: auto;
   width: 100%;
   z-index: 2;
+  -webkit-transition: all 250ms ease-in;
   transition: all 250ms ease-in;
 }
 
@@ -57,10 +65,14 @@ nav h1.logo {
 }
 
 nav ul.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-right: 1rem;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
 }
 
@@ -72,7 +84,9 @@ nav ul.nav-links li {
   position: relative;
   top: 0;
   left: 0;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-transition-property: color;
   transition-property: color;
 }
 
@@ -84,7 +98,9 @@ nav ul.nav-links li:before {
   height: 0.11rem;
   background-color: #ffffff;
   opacity: 0;
+  -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  -webkit-transition-property: width, opacity;
   transition-property: width, opacity;
 }
 
@@ -105,11 +121,13 @@ section.intro-content {
 }
 
 section.intro-content svg#Group_4 {
-  transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
   position: absolute;
   top: 0;
   left: 0;
-  transform-origin: -80% 250px;
+  -webkit-transform-origin: -80% 250px;
+          transform-origin: -80% 250px;
 }
 
 section.intro-content h1 {
@@ -151,7 +169,8 @@ section.intro-content h1#year {
   margin: 0;
   color: rgba(255, 255, 255, 0.3);
   font-family: 'Rampart One', cursive;
-  transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 section.intro-content svg#path_17 {

@@ -125,7 +125,7 @@ main {
   margin: 0 auto;
 }
 div.intro-content {
-    // visibility: hidden;
+    visibility: hidden;
   width: 100%;
   height: 90vh;
   z-index: 1;
@@ -343,14 +343,14 @@ div.intro-content {
   height: 656px;
 }
 
-.svg-assets{
-    transition: transform 1s linear;
-    display: inline-block;
-    cursor: pointer;
-}
-.svg-assets:hover {
-  transform: scale(105%); 
-}
+// .svg-assets{
+//     transition: transform 1s linear;
+//     display: inline-block;
+//     cursor: pointer;
+// }
+// .svg-assets:hover {
+//   transform: scale(105%); 
+// }
 
 // switch navigation animation colors around
 

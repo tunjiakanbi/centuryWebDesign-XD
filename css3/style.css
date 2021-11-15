@@ -2,7 +2,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 16px;
 }
 
@@ -40,13 +41,20 @@ nav {
   background-color: #110066;
   position: fixed;
   top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 10vh;
   margin: auto;
   width: 100%;
   z-index: 2;
+  -webkit-transition: all 250ms ease-in;
   transition: all 250ms ease-in;
 }
 
@@ -58,10 +66,14 @@ nav h1.logo {
 }
 
 nav ul.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-right: 1rem;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
 }
 
@@ -73,7 +85,9 @@ nav ul.nav-links li {
   position: relative;
   top: 0;
   left: 0;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  -webkit-transition-property: color;
   transition-property: color;
 }
 
@@ -85,7 +99,9 @@ nav ul.nav-links li:before {
   height: 0.11rem;
   background-color: #ffffff;
   opacity: 0;
+  -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  -webkit-transition-property: width, opacity;
   transition-property: width, opacity;
 }
 
@@ -103,6 +119,7 @@ main {
 }
 
 div.intro-content {
+  visibility: hidden;
   width: 100%;
   height: 90vh;
   z-index: 1;
@@ -338,15 +355,5 @@ div.intro-content section.svg-assets {
   left: 1335px;
   width: 334px;
   height: 656px;
-}
-
-.svg-assets {
-  transition: transform 1s linear;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.svg-assets:hover {
-  transform: scale(105%);
 }
 /*# sourceMappingURL=style.css.map */

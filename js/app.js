@@ -1,5 +1,7 @@
 $(function () {
-  gsap.registerPlugin(ScrollTrigger);
+  // gsap.registerPlugin(ScrollTrigger);
+
+  //intersection observer starts here
   function interSect() {
     const nav = document.querySelector("nav");
     const intro = document.querySelector(".intro-content");
@@ -27,9 +29,11 @@ $(function () {
   }
 
   interSect();
+//intersection observer ends here
 
-
+//gsap code starts here
   const svgAssests = $('.mySVG');
+  console.log(svgAssests);
   //const svgGroup1 = document.querySelectorAll('svg#Group_4.mySVG > path');
   //const svgGroup2 = document.querySelectorAll('svg#mskG_1a.mySVG > g#Mask_Group1 > #Group_1 > path');
 
@@ -37,7 +41,7 @@ $(function () {
   const svgGroup2 = $('svg#mskG_1a.mySVG > g#Mask_Group_1 > g#Group_1 > path');
   // const svgGroup2 = $('#Group_1 > path');
   // console.log(svgGroup1);
-  console.log(svgGroup2);
+  // console.log(svgGroup2);
   // console.log(svgAssests);
   function init() {
     let tl = gsap.timeline();
