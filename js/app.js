@@ -52,7 +52,7 @@ $(function () {
     tl.from(svgAssests, {
       xPercent: -100,
       autoAlpha: 0,
-      stagger: 0.2,
+      stagger: 0.15,
       ease: 'linear'
     },'+=2');
     // tl.from(svgAssests, {
@@ -85,6 +85,7 @@ $(function () {
     const scroll = new LocomotiveScroll({
       // el: document.querySelector('body'),
       el: document.querySelector('.intro-content'),
+      
       smooth: true,
       // offset: ["10vh", "0"],
       // initPosition: {x:0, y: "10vh"},

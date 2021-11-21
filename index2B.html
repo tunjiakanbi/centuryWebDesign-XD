@@ -14,7 +14,7 @@
     <style>
         #demo3 {
             width: 100%;
-            height: 100vh;
+            height: 140vh;
             background-color: red;
         }
 
@@ -59,8 +59,49 @@
         #form-val {
             display: block;
             position: relative;
-            color: #000;
+            color: #fff;
+            width: 400px;
+            height: 300px;
+            background-color: #000;
+            opacity: 1;
         }
+        #form-val b {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: block;
+        }
+        .demo4 {
+            margin-top: 200px;
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            position: relative;
+            
+        }
+        .demo4 button {
+            /* margin: 0 auto; */
+        }      
+        .blue {
+            border-radius: 50%;
+            width: 350px;
+            height: 350px;
+            background-color: white;
+            position: relative;
+            margin: 0 auto;
+            transition: all 0.5s linear;
+            
+        }
+        .demo4p {
+            width: 300px;
+            height: 300px;
+            background-color: black;
+            position: relative;
+            margin: 0 auto;
+            /* border-radius: 1rem;  */
+            transition: all 0.5s linear;
+        }
+  
 
 
 
@@ -124,127 +165,20 @@ font-family: 'Open Sans', sans-serif; */
         <form>
             <h1>Contact Me</h1>
             <input type="text" name="fname" id="fname" placeholder="First Name"><br>
-            <input type="text" name="lname" id="lname" placeholder="Last Name"><br>
+            <input type="text" name="lname" id="lname" placeholder="Last Name"><br> 
             <input type="email" name="email" id="email" placeholder="Email"><br>
-            <input type="phone" name="phone" id="phone" placeholder="Phone"><br>
+             <input type="phone" name="phone" id="phone" placeholder="Phone"><br>
             <button id="mySubmit" type="submit">Submit</button>
         </form>
         <p id="form-val"></p>
     </section>
+    <section class="demo4">
+        <button>Click me</button>
+       <div id="demo4p" class="demo4p"></div>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            /////////////////// jquery starts here
-            const btn1 = $("#button-1");
-            const btn2 = $("#button-2");
-            const btn3 = $("#button-3");
-
-            const para1 = $("#para1");
-            const para2 = $("#para2");
-            const para3 = $("#para3");
-
-            $(btn1).click(() => {
-                // $(para2).animate({right: '2em'});
-                $(para2).hide();
-                // $(para3).animate({right: '2em'});
-                $(para3).hide();
-                $(para1).slideToggle("fast");
-                $(para1).animate({
-                    left: "2em",
-                    opacity: 1,
-                });
-            });
-            $(btn2).click(() => {
-                // $(para1).animate({right: '2em'});
-                $(para1).hide();
-                // $(para3).animate({right: '2em'});
-                $(para3).hide();
-                $(para2).slideToggle("fast");
-                $(para2).animate({
-                    left: "2em",
-                    opacity: 1,
-                });
-            });
-            // $(btn3).click(() => {
-            //   // $(para1).animate({right: '2em'});
-            //   $(para1).hide();
-            //   // $(para2).animate({right: '2em'});
-            //   $(para2).hide();
-            //   $(para3).slideToggle("fast", () => {
-            //     $(para3).animate(
-            //       {
-            //         left: "2em",
-            //         opacity: 1,
-            //       },
-            //       "1s",
-            //       () => {
-            //         $(para3).animate({ width: "+=220px" });
-            //       }
-            //     );
-            //   });
-            // });
-            $(btn3).click(() => {
-
-                $(para1).hide();
-                $(para2).hide();
-                $(para3).slideToggle("fast")
-                    .animate({
-                        left: "2em",
-                        opacity: 1
-                    }, '1s')
-                    .animate({
-                        width: "+=220px"
-                    })
-            });
-
-            // let myAnimation = function(x, y, z) {
-            //     x.hide();
-            //     // $(para2).animate({right: '2em'});
-            //     y.hide();
-            //     z.slideToggle('fast');
-            //     z.animate({
-            //         left: '2em',
-            //         opacity: 1
-            //     });
-            // }
-            // $(btn3).click({
-            //     myAnimation(para1, para2, para3);
-            // })
-
-
-            const span1 = $('#span1');
-            const span2 = $('#span2');
-            // console.log(span1);
-            span1.text('Page One');
-            span2.html('<b>Page Two</b>' + ' &copy');
-
-            let fname = $('#fname');
-            let lname = $('#lname');
-            let email = $('#email');
-            let phone = $('#phone');
-            let mySubmit = $('#mySubmit');
-
-           mySubmit.click(()=> {
-               let f_name = fname.val();
-               let l_name = lname.val();
-               let _email = email.val();
-               let _phone = phone.val();
-               alert(f_name + ', ' +l_name + ', '+ _email +', ' +_phone);
-            //    $('#form-val').html(
-            //        '<b>' + f_name + '</b><br>' 
-            //        + '<b>' + l_name + '</b><br>' 
-            //        + '<b>' + _email + '</b><br>' 
-            //        + '<b>' + _phone + '</b><br>' 
-            //        );
-           })
-
-
-
-
-            /////////////////////////////document.ready ends here
-        });
-    </script>
+    <script src="js/app2.js"></script>
 </body>
 
 </html>
